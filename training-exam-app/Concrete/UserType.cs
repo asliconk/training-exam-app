@@ -1,7 +1,7 @@
 ﻿
 namespace training_exam_app.Concrete
 {
-    enum UserType
+    public enum UserType
     {
         admin,
         examiner,

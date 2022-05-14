@@ -35,7 +35,7 @@ namespace training_exam_app.Concrete
 
                 return deger;
             }
-            private static readonly string _connectionString = @"Data Source=;Initial Catalog=Agency;Integrated Security=True";
+            private static readonly string _connectionString = @"Data Source=;Initial Catalog=TrainingExam;Integrated Security=True";
 
             public static Int32 ExecuteNonQuery(String commandText,
                 SqlParameter[] parameters = null, CommandType commandType = CommandType.Text)

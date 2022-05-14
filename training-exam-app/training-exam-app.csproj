@@ -4,11 +4,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E0CFD8E5-13B4-4AB6-A9C6-ECF0790B749C}</ProjectGuid>
+    <ProjectGuid>{0B04422B-CD45-41F3-A3B0-E2740419C7CF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>training_exam_app</RootNamespace>
-    <AssemblyName>training-exam-app</AssemblyName>
+    <AssemblyName>training_exam_app</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

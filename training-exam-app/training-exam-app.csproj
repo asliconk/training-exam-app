@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\Answers.cs" />
+    <Compile Include="Concrete\QeustionModules.cs" />
+    <Compile Include="Concrete\Questions.cs" />
+    <Compile Include="Concrete\QuestionStatus.cs" />
+    <Compile Include="Concrete\UserAnswers.cs" />
+    <Compile Include="Concrete\UserSettings.cs" />
     <Compile Include="Concrete\UserType.cs" />
     <Compile Include="Concrete\User.cs" />
     <Compile Include="Form1.cs">

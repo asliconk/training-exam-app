@@ -1,7 +1,7 @@
 ﻿
 namespace training_exam_app
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Required designer variable.

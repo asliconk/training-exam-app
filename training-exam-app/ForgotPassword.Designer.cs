@@ -95,7 +95,9 @@ namespace training_exam_app
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEMail);
             this.Controls.Add(this.btnSend);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ForgotPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPassword";
             ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).EndInit();
             this.ResumeLayout(false);

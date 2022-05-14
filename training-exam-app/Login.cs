@@ -12,6 +12,30 @@
 
         }
 
-        
+        private void btnClose_Click(object sender, System.EventArgs e)
+        {
+           this.Close();
+        }
+
+        private void btnSignIn_Click(object sender, System.EventArgs e)
+        {
+            var home = new Home();
+            this.Hide();
+            home.Show();
+        }
+
+        private void lblSignUp_Click(object sender, System.EventArgs e)
+        {
+            var signUp = new SignUp();
+            this.Hide();
+            signUp.Show();
+        }
+
+        private void lblForgotPassword_Click(object sender, System.EventArgs e)
+        {
+            var forgotPassword = new ForgotPassword();
+            this.Hide();
+            forgotPassword.Show();
+        }
     }
 }

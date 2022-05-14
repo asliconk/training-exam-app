@@ -31,7 +31,7 @@ namespace training_exam_app
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnSignIn = new DevExpress.XtraEditors.SimpleButton();
-            this.lblUserName = new DevExpress.XtraEditors.LabelControl();
+            this.lblEMail = new DevExpress.XtraEditors.LabelControl();
             this.lblPassword = new DevExpress.XtraEditors.LabelControl();
             this.lblForgotPassword = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -55,15 +55,15 @@ namespace training_exam_app
             this.btnSignIn.TabIndex = 0;
             this.btnSignIn.Text = "SIGN IN";
             // 
-            // lblUserName
+            // lblEMail
             // 
-            this.lblUserName.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUserName.Appearance.Options.UseFont = true;
-            this.lblUserName.Location = new System.Drawing.Point(55, 313);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(88, 21);
-            this.lblUserName.TabIndex = 1;
-            this.lblUserName.Text = "User Name:";
+            this.lblEMail.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEMail.Appearance.Options.UseFont = true;
+            this.lblEMail.Location = new System.Drawing.Point(55, 313);
+            this.lblEMail.Name = "lblEMail";
+            this.lblEMail.Size = new System.Drawing.Size(111, 21);
+            this.lblEMail.TabIndex = 1;
+            this.lblEMail.Text = "E-Mail Address";
             // 
             // lblPassword
             // 
@@ -127,14 +127,14 @@ namespace training_exam_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 492);
+            this.ClientSize = new System.Drawing.Size(424, 500);
             this.Controls.Add(this.lblSignUp);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblForgotPassword);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUserName);
+            this.Controls.Add(this.lblEMail);
             this.Controls.Add(this.btnSignIn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -152,7 +152,7 @@ namespace training_exam_app
         #endregion
 
         private DevExpress.XtraEditors.SimpleButton btnSignIn;
-        private DevExpress.XtraEditors.LabelControl lblUserName;
+        private DevExpress.XtraEditors.LabelControl lblEMail;
         private DevExpress.XtraEditors.LabelControl lblPassword;
         private DevExpress.XtraEditors.LabelControl lblForgotPassword;
         private System.Windows.Forms.PictureBox pictureBox1;

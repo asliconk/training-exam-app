@@ -29,42 +29,43 @@ namespace training_exam_app
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPassword = new DevExpress.XtraEditors.TextEdit();
-            this.txtUserName = new DevExpress.XtraEditors.TextEdit();
+            this.txtLastName = new DevExpress.XtraEditors.TextEdit();
+            this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.lblLastName = new DevExpress.XtraEditors.LabelControl();
             this.lblFirstName = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtEMail = new DevExpress.XtraEditors.TextEdit();
+            this.txtUserType = new DevExpress.XtraEditors.TextEdit();
             this.lblEMail = new DevExpress.XtraEditors.LabelControl();
             this.lblUserType = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtPassword = new DevExpress.XtraEditors.TextEdit();
             this.lblPassword = new DevExpress.XtraEditors.LabelControl();
+            this.btnSignUp = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtPassword
+            // txtLastName
             // 
-            this.txtPassword.Location = new System.Drawing.Point(139, 168);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(308, 22);
-            this.txtPassword.TabIndex = 14;
+            this.txtLastName.Location = new System.Drawing.Point(63, 146);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(308, 22);
+            this.txtLastName.TabIndex = 14;
             // 
-            // txtUserName
+            // txtFirstName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(139, 113);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(308, 22);
-            this.txtUserName.TabIndex = 13;
+            this.txtFirstName.Location = new System.Drawing.Point(63, 91);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(308, 22);
+            this.txtFirstName.TabIndex = 13;
             // 
             // lblLastName
             // 
             this.lblLastName.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblLastName.Appearance.Options.UseFont = true;
-            this.lblLastName.Location = new System.Drawing.Point(139, 141);
+            this.lblLastName.Location = new System.Drawing.Point(63, 119);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(85, 21);
             this.lblLastName.TabIndex = 12;
@@ -74,85 +75,100 @@ namespace training_exam_app
             // 
             this.lblFirstName.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblFirstName.Appearance.Options.UseFont = true;
-            this.lblFirstName.Location = new System.Drawing.Point(139, 86);
+            this.lblFirstName.Location = new System.Drawing.Point(63, 64);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(87, 21);
             this.lblFirstName.TabIndex = 11;
             this.lblFirstName.Text = "First Name:";
             // 
-            // textEdit1
+            // txtEMail
             // 
-            this.textEdit1.Location = new System.Drawing.Point(143, 290);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(308, 22);
-            this.textEdit1.TabIndex = 18;
+            this.txtEMail.Location = new System.Drawing.Point(67, 268);
+            this.txtEMail.Name = "txtEMail";
+            this.txtEMail.Size = new System.Drawing.Size(308, 22);
+            this.txtEMail.TabIndex = 18;
             // 
-            // textEdit2
+            // txtUserType
             // 
-            this.textEdit2.Location = new System.Drawing.Point(143, 235);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(308, 22);
-            this.textEdit2.TabIndex = 17;
+            this.txtUserType.Location = new System.Drawing.Point(67, 213);
+            this.txtUserType.Name = "txtUserType";
+            this.txtUserType.Size = new System.Drawing.Size(308, 22);
+            this.txtUserType.TabIndex = 17;
             // 
             // lblEMail
             // 
             this.lblEMail.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblEMail.Appearance.Options.UseFont = true;
-            this.lblEMail.Location = new System.Drawing.Point(143, 263);
+            this.lblEMail.Location = new System.Drawing.Point(67, 241);
             this.lblEMail.Name = "lblEMail";
-            this.lblEMail.Size = new System.Drawing.Size(116, 21);
+            this.lblEMail.Size = new System.Drawing.Size(117, 21);
             this.lblEMail.TabIndex = 16;
-            this.lblEMail.Text = "E Mail Address:";
+            this.lblEMail.Text = "E-Mail Address:";
             // 
             // lblUserType
             // 
             this.lblUserType.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblUserType.Appearance.Options.UseFont = true;
-            this.lblUserType.Location = new System.Drawing.Point(143, 208);
+            this.lblUserType.Location = new System.Drawing.Point(67, 186);
             this.lblUserType.Name = "lblUserType";
             this.lblUserType.Size = new System.Drawing.Size(81, 21);
             this.lblUserType.TabIndex = 15;
             this.lblUserType.Text = "User Type:";
             // 
-            // textEdit3
+            // txtPassword
             // 
-            this.textEdit3.Location = new System.Drawing.Point(143, 359);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(308, 22);
-            this.textEdit3.TabIndex = 20;
+            this.txtPassword.Location = new System.Drawing.Point(67, 337);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(308, 22);
+            this.txtPassword.TabIndex = 20;
             // 
             // lblPassword
             // 
             this.lblPassword.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblPassword.Appearance.Options.UseFont = true;
-            this.lblPassword.Location = new System.Drawing.Point(143, 332);
+            this.lblPassword.Location = new System.Drawing.Point(67, 310);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(77, 21);
             this.lblPassword.TabIndex = 19;
             this.lblPassword.Text = "Password:";
             // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Appearance.BackColor = System.Drawing.Color.Green;
+            this.btnSignUp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnSignUp.Appearance.Options.UseBackColor = true;
+            this.btnSignUp.Appearance.Options.UseFont = true;
+            this.btnSignUp.Location = new System.Drawing.Point(67, 393);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(308, 36);
+            this.btnSignUp.TabIndex = 21;
+            this.btnSignUp.Text = "SIGN UP";
+            // 
             // SignUp
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 584);
-            this.Controls.Add(this.textEdit3);
+            this.ClientSize = new System.Drawing.Size(449, 504);
+            this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.textEdit2);
+            this.Controls.Add(this.txtEMail);
+            this.Controls.Add(this.txtUserType);
             this.Controls.Add(this.lblEMail);
             this.Controls.Add(this.lblUserType);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
             this.Name = "SignUp";
             this.Text = "SignUp";
+            ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,15 +176,16 @@ namespace training_exam_app
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txtPassword;
-        private DevExpress.XtraEditors.TextEdit txtUserName;
+        private DevExpress.XtraEditors.TextEdit txtLastName;
+        private DevExpress.XtraEditors.TextEdit txtFirstName;
         private DevExpress.XtraEditors.LabelControl lblLastName;
         private DevExpress.XtraEditors.LabelControl lblFirstName;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txtEMail;
+        private DevExpress.XtraEditors.TextEdit txtUserType;
         private DevExpress.XtraEditors.LabelControl lblEMail;
         private DevExpress.XtraEditors.LabelControl lblUserType;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtPassword;
         private DevExpress.XtraEditors.LabelControl lblPassword;
+        private DevExpress.XtraEditors.SimpleButton btnSignUp;
     }
 }

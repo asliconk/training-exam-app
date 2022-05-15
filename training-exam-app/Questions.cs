@@ -48,5 +48,17 @@ namespace training_exam_app
             question.UpdateQuestionStatus(Convert.ToInt32(gvQuestions.GetRowCellValue(gvQuestions.FocusedRowHandle, "Id")), QuestionStatus.dontApproved);
             this.LoadData();
         }
+
+        private void updateQuestion_Click(object sender, EventArgs e)
+        {
+            var addQuestion = new AddQuestion(Convert.ToInt32(gvQuestions.GetRowCellValue(gvQuestions.FocusedRowHandle, "Id")));
+            addQuestion.ShowDialog();
+        }
+
+        private void deleteQuestion_Click(object sender, EventArgs e)
+        {
+            this.question.DeleteQuestion(Convert.ToInt32(gvQuestions.GetRowCellValue(gvQuestions.FocusedRowHandle, "Id")));
+            this.LoadData();
+        }
     }
 }

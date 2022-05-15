@@ -33,13 +33,15 @@ namespace training_exam_app
             this.grdQuestions = new DevExpress.XtraGrid.GridControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.questionApprove = new System.Windows.Forms.ToolStripMenuItem();
+            this.questionDontApprove = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateQuestion = new System.Windows.Forms.ToolStripMenuItem();
             this.gvQuestions = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.questionDontApprove = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteQuestion = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdQuestions)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvQuestions)).BeginInit();
@@ -62,9 +64,11 @@ namespace training_exam_app
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.questionApprove,
-            this.questionDontApprove});
+            this.questionDontApprove,
+            this.updateQuestion,
+            this.deleteQuestion});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(239, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(239, 128);
             // 
             // questionApprove
             // 
@@ -72,6 +76,20 @@ namespace training_exam_app
             this.questionApprove.Size = new System.Drawing.Size(238, 24);
             this.questionApprove.Text = "Question Approve";
             this.questionApprove.Click += new System.EventHandler(this.questionApprove_Click);
+            // 
+            // questionDontApprove
+            // 
+            this.questionDontApprove.Name = "questionDontApprove";
+            this.questionDontApprove.Size = new System.Drawing.Size(238, 24);
+            this.questionDontApprove.Text = "Question Don\'t Approve";
+            this.questionDontApprove.Click += new System.EventHandler(this.questionDontApprove_Click);
+            // 
+            // updateQuestion
+            // 
+            this.updateQuestion.Name = "updateQuestion";
+            this.updateQuestion.Size = new System.Drawing.Size(238, 24);
+            this.updateQuestion.Text = "Update Question";
+            this.updateQuestion.Click += new System.EventHandler(this.updateQuestion_Click);
             // 
             // gvQuestions
             // 
@@ -148,12 +166,12 @@ namespace training_exam_app
             this.gridColumn5.VisibleIndex = 4;
             this.gridColumn5.Width = 94;
             // 
-            // questionDontApprove
+            // deleteQuestion
             // 
-            this.questionDontApprove.Name = "questionDontApprove";
-            this.questionDontApprove.Size = new System.Drawing.Size(238, 24);
-            this.questionDontApprove.Text = "Question Don\'t Approve";
-            this.questionDontApprove.Click += new System.EventHandler(this.questionDontApprove_Click);
+            this.deleteQuestion.Name = "deleteQuestion";
+            this.deleteQuestion.Size = new System.Drawing.Size(238, 24);
+            this.deleteQuestion.Text = "Delete Question";
+            this.deleteQuestion.Click += new System.EventHandler(this.deleteQuestion_Click);
             // 
             // QuestionsControl
             // 
@@ -182,5 +200,7 @@ namespace training_exam_app
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem questionApprove;
         private System.Windows.Forms.ToolStripMenuItem questionDontApprove;
+        private System.Windows.Forms.ToolStripMenuItem updateQuestion;
+        private System.Windows.Forms.ToolStripMenuItem deleteQuestion;
     }
 }

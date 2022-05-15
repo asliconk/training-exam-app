@@ -56,7 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\Answers.cs" />
+    <Compile Include="AddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddQuestion.Designer.cs">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Answer.cs" />
     <Compile Include="Concrete\CurrentUser.cs" />
     <Compile Include="Concrete\DataBaseTransactions.cs" />
     <Compile Include="Concrete\QeustionModules.cs" />
@@ -67,12 +73,6 @@
     <Compile Include="Concrete\UserSettings.cs" />
     <Compile Include="Concrete\UserType.cs" />
     <Compile Include="Concrete\User.cs" />
-    <Compile Include="CreateQuestion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateQuestion.Designer.cs">
-      <DependentUpon>CreateQuestion.cs</DependentUpon>
-    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,8 +111,8 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CreateQuestion.resx">
-      <DependentUpon>CreateQuestion.cs</DependentUpon>
+    <EmbeddedResource Include="AddQuestion.resx">
+      <DependentUpon>AddQuestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -152,6 +152,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -13,7 +13,6 @@ namespace training_exam_app
 
         private void Home_Load(object sender, EventArgs e)
         {
-            CurrentUser.UserType = UserType.admin;
             userTypeFilter();
         }
 
@@ -44,6 +43,12 @@ namespace training_exam_app
             }
             QuestionsControl.InstanceQuestions.BringToFront();
             this.Text = @"Questions";
+        }
+
+        private void btnQuestionAdd_Click(object sender, EventArgs e)
+        {
+            var addQuestion = new AddQuestion();
+            addQuestion.ShowDialog();
         }
     }
 }

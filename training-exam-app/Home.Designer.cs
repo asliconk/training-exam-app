@@ -128,6 +128,7 @@ namespace training_exam_app
             this.btnQuestionAdd1.Name = "btnQuestionAdd1";
             this.btnQuestionAdd1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuestionAdd1.Text = "Question Add";
+            this.btnQuestionAdd1.Click += new System.EventHandler(this.btnQuestionAdd_Click);
             // 
             // btnQuestions1
             // 
@@ -151,7 +152,7 @@ namespace training_exam_app
             this.btnQuestionAdd2.Name = "btnQuestionAdd2";
             this.btnQuestionAdd2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuestionAdd2.Text = "Question Add";
-            this.btnQuestionAdd2.Visible = false;
+            this.btnQuestionAdd2.Click += new System.EventHandler(this.btnQuestionAdd_Click);
             // 
             // btnQuestions2
             // 

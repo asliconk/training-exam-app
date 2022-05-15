@@ -103,6 +103,7 @@ namespace training_exam_app
             // 
             // txtUserName
             // 
+            this.txtUserName.EditValue = "asliconk@gmail.com";
             this.txtUserName.Location = new System.Drawing.Point(55, 333);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(308, 22);
@@ -110,8 +111,10 @@ namespace training_exam_app
             // 
             // txtPassword
             // 
+            this.txtPassword.EditValue = "admin";
             this.txtPassword.Location = new System.Drawing.Point(55, 388);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Properties.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(308, 22);
             this.txtPassword.TabIndex = 10;
             // 
@@ -141,6 +144,7 @@ namespace training_exam_app
             // 
             // Login
             // 
+            this.AcceptButton = this.btnSignIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 500);

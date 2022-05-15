@@ -35,11 +35,15 @@
     <Reference Include="DevExpress.BonusSkins.v21.2" />
     <Reference Include="DevExpress.Data.Desktop.v21.2" />
     <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Mvvm.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v21.2.Core" />
     <Reference Include="DevExpress.Utils.v21.2" />
     <Reference Include="DevExpress.XtraBars.v21.2" />
     <Reference Include="DevExpress.Sparkline.v21.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,7 +60,7 @@
     <Compile Include="Concrete\CurrentUser.cs" />
     <Compile Include="Concrete\DataBaseTransactions.cs" />
     <Compile Include="Concrete\QeustionModules.cs" />
-    <Compile Include="Concrete\Questions.cs" />
+    <Compile Include="Concrete\Question.cs" />
     <Compile Include="Concrete\QuestionStatus.cs" />
     <Compile Include="Concrete\Subjects.cs" />
     <Compile Include="Concrete\UserAnswers.cs" />
@@ -89,6 +93,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Questions.Designer.cs">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>

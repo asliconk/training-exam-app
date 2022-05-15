@@ -1,4 +1,6 @@
-﻿namespace training_exam_app
+﻿using training_exam_app.Concrete;
+
+namespace training_exam_app
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
@@ -19,9 +21,13 @@
 
         private void btnSignIn_Click(object sender, System.EventArgs e)
         {
-            var home = new Home();
-            this.Hide();
-            home.Show();
+            var user = new User();
+            if(user.Login(txtUserName.Text, txtPassword.Text))
+            {
+                var home = new Home();
+                this.Hide();
+                home.Show();
+            }
         }
 
         private void lblSignUp_Click(object sender, System.EventArgs e)

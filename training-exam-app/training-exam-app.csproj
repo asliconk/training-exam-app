@@ -135,7 +135,6 @@
     <Compile Include="TrainingModule.Designer.cs">
       <DependentUpon>TrainingModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
     <EmbeddedResource Include="AddQuestion.resx">
       <DependentUpon>AddQuestion.cs</DependentUpon>
     </EmbeddedResource>

@@ -13,9 +13,20 @@ namespace training_exam_app
 {
     public partial class SettingsStudent : DevExpress.XtraEditors.XtraUserControl
     {
+        private static SettingsStudent _instanceProductList;
+        public static SettingsStudent InstanceQuestions
+        {
+            get
+            {
+                if (_instanceProductList == null)
+                    _instanceProductList = new SettingsStudent();
+                return _instanceProductList;
+            }
+        }
         public SettingsStudent()
         {
             InitializeComponent();
         }
+
     }
 }

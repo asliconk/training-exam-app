@@ -51,5 +51,27 @@ namespace training_exam_app.Concrete
                 return false;
             }
         }
+        
+        public bool SignUp()
+        {
+            SqlParameter[] parameters = new SqlParameter[] {
+            new SqlParameter("@FirstName",SqlDbType.NVarChar),
+            new SqlParameter("@LastName",SqlDbType.NVarChar),
+            new SqlParameter("@UserType",SqlDbType.Int),
+            new SqlParameter("@EmailAddress",SqlDbType.NVarChar),
+            new SqlParameter("@Password",SqlDbType.NVarChar),
+            new SqlParameter("@RecoveryKey",SqlDbType.NVarChar)
+            };
+            parameters[0].Value = this.FirstName;
+            parameters[1].Value = this.LastName;
+            parameters[2].Value = this.UserType;
+            parameters[3].Value = this.EmailAddress;
+            parameters[4].Value = this.Password;
+            parameters[5].Value = this.RecoverKey;
+
+            int execute = DatabaseTransactions.ExecuteNonQuery("INSERT INTO tblUsers(FirstName,LastName,UserType,EmailAddress,Password,RecoveryKey) VALUES(@FirstName,@LastName,@UserType,@EmailAddress,@Password,@RecoveryKey);", parameters);
+            ExecuteState(execute);
+            return true;
+        }
     }
 }

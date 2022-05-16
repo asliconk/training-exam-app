@@ -54,8 +54,10 @@ namespace training_exam_app
                 txtAnswerTwo.Text = _question.QuestionAnswers[1].AnswerContent;
                 txtAnswerThree.Text = _question.QuestionAnswers[2].AnswerContent;
                 txtAnswerFour.Text = _question.QuestionAnswers[3].AnswerContent;
-                
-
+                rbtnAnswerStateOne.Checked = _question.QuestionAnswers[0].AnswerState;
+                rbtnAnswerStateTwo.Checked = _question.QuestionAnswers[1].AnswerState;
+                rbtnAnswerStateThree.Checked = _question.QuestionAnswers[2].AnswerState;
+                rbtnAnswerStateFour.Checked = _question.QuestionAnswers[3].AnswerState;
             }
             else
             {
@@ -96,11 +98,15 @@ namespace training_exam_app
             _question.QuestionAnswers[2].AnswerState = rbtnAnswerStateThree.Checked;
             _question.QuestionAnswers[3].AnswerState = rbtnAnswerStateFour.Checked;
             if (_question.Id == 0)
+            {
                 if (_question.CreateQuestion())
                     this.Close();
-                else
-                 if (_question.UpdateQuestion())
+            }
+            else
+            {
+                if (_question.UpdateQuestion())
                     this.Close();
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ namespace training_exam_app
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtLastName = new DevExpress.XtraEditors.TextEdit();
             this.txtFirstName = new DevExpress.XtraEditors.TextEdit();
             this.lblLastName = new DevExpress.XtraEditors.LabelControl();
@@ -40,11 +41,13 @@ namespace training_exam_app
             this.txtPassword = new DevExpress.XtraEditors.TextEdit();
             this.lblPassword = new DevExpress.XtraEditors.LabelControl();
             this.btnSignUp = new DevExpress.XtraEditors.SimpleButton();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLastName
@@ -143,6 +146,7 @@ namespace training_exam_app
             this.btnSignUp.Size = new System.Drawing.Size(308, 36);
             this.btnSignUp.TabIndex = 21;
             this.btnSignUp.Text = "SIGN UP";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // SignUp
             // 
@@ -171,6 +175,7 @@ namespace training_exam_app
             ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +194,6 @@ namespace training_exam_app
         private DevExpress.XtraEditors.TextEdit txtPassword;
         private DevExpress.XtraEditors.LabelControl lblPassword;
         private DevExpress.XtraEditors.SimpleButton btnSignUp;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

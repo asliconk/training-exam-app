@@ -42,6 +42,10 @@ namespace training_exam_app
             this.lblQuestionNumber = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.lblHeader = new DevExpress.XtraEditors.LabelControl();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rbtnAnswerStateFour = new System.Windows.Forms.RadioButton();
+            this.rbtnAnswerStateTwo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerFour.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerThree.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerTwo.Properties)).BeginInit();
@@ -170,10 +174,52 @@ namespace training_exam_app
             this.lblHeader.TabIndex = 29;
             this.lblHeader.Text = "Real Exam";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(151, 292);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Answer 1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(151, 341);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Answer 3";
+            // 
+            // rbtnAnswerStateFour
+            // 
+            this.rbtnAnswerStateFour.AutoSize = true;
+            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(738, 364);
+            this.rbtnAnswerStateFour.Name = "rbtnAnswerStateFour";
+            this.rbtnAnswerStateFour.Size = new System.Drawing.Size(17, 16);
+            this.rbtnAnswerStateFour.TabIndex = 45;
+            this.rbtnAnswerStateFour.TabStop = true;
+            this.rbtnAnswerStateFour.UseVisualStyleBackColor = true;
+            // 
+            // rbtnAnswerStateTwo
+            // 
+            this.rbtnAnswerStateTwo.AutoSize = true;
+            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(738, 315);
+            this.rbtnAnswerStateTwo.Name = "rbtnAnswerStateTwo";
+            this.rbtnAnswerStateTwo.Size = new System.Drawing.Size(17, 16);
+            this.rbtnAnswerStateTwo.TabIndex = 44;
+            this.rbtnAnswerStateTwo.TabStop = true;
+            this.rbtnAnswerStateTwo.UseVisualStyleBackColor = true;
+            // 
             // ExamModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rbtnAnswerStateFour);
+            this.Controls.Add(this.rbtnAnswerStateTwo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.rbtnAnswerStateThree);
             this.Controls.Add(this.rbtnAnswerStateOne);
             this.Controls.Add(this.btnSave);
@@ -213,5 +259,9 @@ namespace training_exam_app
         private DevExpress.XtraEditors.LabelControl lblQuestionNumber;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl lblHeader;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton rbtnAnswerStateFour;
+        private System.Windows.Forms.RadioButton rbtnAnswerStateTwo;
     }
 }

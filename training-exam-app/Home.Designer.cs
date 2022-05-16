@@ -91,27 +91,37 @@ namespace training_exam_app
             // 
             // examModule
             // 
+            this.examModule.Expanded = true;
+            this.examModule.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.examModule.Name = "examModule";
             this.examModule.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.examModule.Text = "Exam Module";
+            this.examModule.Click += new System.EventHandler(this.examModule_Click);
             // 
             // btnTrainingModule
             // 
             this.btnTrainingModule.Name = "btnTrainingModule";
             this.btnTrainingModule.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTrainingModule.Text = "Training Module";
+            this.btnTrainingModule.Click += new System.EventHandler(this.btnTrainingModule_Click);
             // 
             // btnReport
             // 
             this.btnReport.Name = "btnReport";
             this.btnReport.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnReport.Text = "Report";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // btnSettings
             // 
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnSettings.Text = "Settings";
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // examinerTransactions
             // 

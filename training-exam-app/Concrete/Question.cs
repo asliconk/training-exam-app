@@ -11,7 +11,7 @@ namespace training_exam_app.Concrete
     {
         public int Id { get; set; } = 0;
         public QuestionStatus QuestionStatus { get; set; }
-        public string QuestionImagePath { get; set; } = "";
+        public string QuestionImagePath { get; set; } = string.Empty;
         public int QuestionSubjectId { get; set; }
         public string QuestionContent { get; set; }
         public List<Answer> QuestionAnswers { get; set; }
@@ -54,7 +54,7 @@ namespace training_exam_app.Concrete
                 new SqlParameter("@QuestionContent", SqlDbType.NText),
 
             };
-            parameters[0].Value = (int) this.QuestionStatus;
+            parameters[0].Value = (int)this.QuestionStatus;
             parameters[1].Value = this.QuestionImagePath;
             parameters[2].Value = this.QuestionSubjectId;
             parameters[3].Value = this.QuestionContent;
@@ -74,7 +74,7 @@ namespace training_exam_app.Concrete
             ExecuteState(1);
             return true;
         }
-        
+
         public bool UpdateQuestion()
         {
             SqlParameter[] parameters = new SqlParameter[]
@@ -86,12 +86,23 @@ namespace training_exam_app.Concrete
                 new SqlParameter("@QuestionContent", SqlDbType.NText),
 
             };
+            if ((int)this.QuestionStatus == 0 || string.IsNullOrEmpty(this.QuestionContent)  || this.QuestionSubjectId == 0 || this.Id == 0)
+            {
+                MessageBox.Show("değerlerden biri boş");
+                return false;
+            }
             parameters[0].Value = this.Id;
-            parameters[1].Value = (int) this.QuestionStatus;
+            parameters[1].Value = (int)this.QuestionStatus;
             parameters[2].Value = this.QuestionImagePath;
             parameters[3].Value = this.QuestionSubjectId;
             parameters[4].Value = this.QuestionContent;
-            var questionId = DatabaseTransactions.ExecuteScalar("UPDATE tblQuestions SET QuestionStatus=@QuestionStatus, QuestionImagePath=@QuestionImagePath,QuestionSubjectId=@QuestionSubjectId, QuestionContent=@QuestionContent where Id=@Id", parameters);
+            foreach (var item in parameters)
+            {
+                MessageBox.Show(item.Value.ToString());
+
+            }
+            var questionId = DatabaseTransactions.ExecuteScalar("UPDATE tblQuestions SET QuestionStatus=@QuestionStatus, QuestionImagePath=@QuestionImagePath,QuestionSubjectId=@QuestionSubjectId, QuestionContent=@QuestionContent where Id=@Id;", parameters);
+            MessageBox.Show(questionId.ToString());
             if (questionId == null)
             {
                 ExecuteState(-1);
@@ -125,7 +136,7 @@ namespace training_exam_app.Concrete
                 question.QuestionContent = (string)userData.Rows[0]["QuestionContent"];
                 question.QuestionSubjectId = (int)userData.Rows[0]["QuestionSubjectId"];
                 var answer = new Answer();
-                question.QuestionAnswers = answer.GetQuestionAnswers(questionId); 
+                question.QuestionAnswers = answer.GetQuestionAnswers(questionId);
             }
             return question;
         }
@@ -136,7 +147,7 @@ namespace training_exam_app.Concrete
             new SqlParameter("@QuestionId",SqlDbType.NVarChar),
             };
             parameters[0].Value = questionId;
-            int execute =  DatabaseTransactions.ExecuteNonQuery(
+            int execute = DatabaseTransactions.ExecuteNonQuery(
                 @"DELETE FROM tblQuestions WHERE Id=@QuestionId", parameters);
             ExecuteState(execute);
         }

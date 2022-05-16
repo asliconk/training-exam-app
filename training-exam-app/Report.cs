@@ -13,9 +13,20 @@ namespace training_exam_app
 {
     public partial class Report : DevExpress.XtraEditors.XtraUserControl
     {
+        private static Report _instanceProductList;
+        public static Report InstanceQuestions
+        {
+            get
+            {
+                if (_instanceProductList == null)
+                    _instanceProductList = new Report();
+                return _instanceProductList;
+            }
+        }
         public Report()
         {
             InitializeComponent();
         }
+
     }
 }

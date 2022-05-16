@@ -50,5 +50,49 @@ namespace training_exam_app
             var addQuestion = new AddQuestion();
             addQuestion.ShowDialog();
         }
+
+        private void examModule_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(ExamModule.InstanceQuestions))
+            {
+                container.Controls.Add(ExamModule.InstanceQuestions);
+                ExamModule.InstanceQuestions.Dock = DockStyle.Fill;
+            }
+            ExamModule.InstanceQuestions.BringToFront();
+            this.Text = @"Questions";
+        }
+
+        private void btnTrainingModule_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(TrainingModule.InstanceQuestions))
+            {
+                container.Controls.Add(TrainingModule.InstanceQuestions);
+                TrainingModule.InstanceQuestions.Dock = DockStyle.Fill;
+            }
+            TrainingModule.InstanceQuestions.BringToFront();
+            this.Text = @"Questions";
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(Report.InstanceQuestions))
+            {
+                container.Controls.Add(Report.InstanceQuestions);
+                Report.InstanceQuestions.Dock = DockStyle.Fill;
+            }
+            Report.InstanceQuestions.BringToFront();
+            this.Text = @"Questions";
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(SettingsStudent.InstanceQuestions))
+            {
+                container.Controls.Add(SettingsStudent.InstanceQuestions);
+                SettingsStudent.InstanceQuestions.Dock = DockStyle.Fill;
+            }
+            SettingsStudent.InstanceQuestions.BringToFront();
+            this.Text = @"Questions";
+        }
     }
 }

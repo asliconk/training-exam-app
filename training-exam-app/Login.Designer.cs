@@ -103,7 +103,7 @@ namespace training_exam_app
             // 
             // txtUserName
             // 
-            this.txtUserName.EditValue = "asliconk@gmail.com";
+            this.txtUserName.EditValue = "beste@gmail.com";
             this.txtUserName.Location = new System.Drawing.Point(55, 333);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(308, 22);
@@ -111,7 +111,7 @@ namespace training_exam_app
             // 
             // txtPassword
             // 
-            this.txtPassword.EditValue = "admin";
+            this.txtPassword.EditValue = "beste123";
             this.txtPassword.Location = new System.Drawing.Point(55, 388);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Properties.PasswordChar = '*';

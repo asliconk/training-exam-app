@@ -44,7 +44,10 @@ namespace training_exam_app
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.questionContent = new System.Windows.Forms.RichTextBox();
-            this.vScrollBar1 = new DevExpress.XtraEditors.VScrollBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.rbtnAnswerStateFour = new System.Windows.Forms.RadioButton();
+            this.rbtnAnswerStateTwo = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerFour.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerThree.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerTwo.Properties)).BeginInit();
@@ -56,7 +59,7 @@ namespace training_exam_app
             this.lblHeader.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblHeader.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblHeader.Appearance.Options.UseFont = true;
-            this.lblHeader.Location = new System.Drawing.Point(294, 23);
+            this.lblHeader.Location = new System.Drawing.Point(332, 87);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(285, 24);
             this.lblHeader.TabIndex = 0;
@@ -66,7 +69,7 @@ namespace training_exam_app
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(46, 73);
+            this.labelControl2.Location = new System.Drawing.Point(93, 116);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(72, 21);
             this.labelControl2.TabIndex = 1;
@@ -76,7 +79,7 @@ namespace training_exam_app
             // 
             this.lblQuestionNumber.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblQuestionNumber.Appearance.Options.UseFont = true;
-            this.lblQuestionNumber.Location = new System.Drawing.Point(140, 73);
+            this.lblQuestionNumber.Location = new System.Drawing.Point(187, 116);
             this.lblQuestionNumber.Name = "lblQuestionNumber";
             this.lblQuestionNumber.Size = new System.Drawing.Size(12, 21);
             this.lblQuestionNumber.TabIndex = 2;
@@ -84,7 +87,7 @@ namespace training_exam_app
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(46, 495);
+            this.btnBack.Location = new System.Drawing.Point(187, 506);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(109, 58);
             this.btnBack.TabIndex = 3;
@@ -92,7 +95,7 @@ namespace training_exam_app
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(555, 478);
+            this.btnNext.Location = new System.Drawing.Point(668, 506);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(109, 58);
             this.btnNext.TabIndex = 4;
@@ -101,7 +104,7 @@ namespace training_exam_app
             // rbtnAnswerStateThree
             // 
             this.rbtnAnswerStateThree.AutoSize = true;
-            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(388, 350);
+            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(435, 393);
             this.rbtnAnswerStateThree.Name = "rbtnAnswerStateThree";
             this.rbtnAnswerStateThree.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateThree.TabIndex = 28;
@@ -112,7 +115,7 @@ namespace training_exam_app
             // 
             this.rbtnAnswerStateOne.AutoSize = true;
             this.rbtnAnswerStateOne.Checked = true;
-            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(388, 301);
+            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(435, 344);
             this.rbtnAnswerStateOne.Name = "rbtnAnswerStateOne";
             this.rbtnAnswerStateOne.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateOne.TabIndex = 27;
@@ -121,7 +124,7 @@ namespace training_exam_app
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(591, 375);
+            this.btnSave.Location = new System.Drawing.Point(638, 418);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 47);
             this.btnSave.TabIndex = 26;
@@ -129,7 +132,7 @@ namespace training_exam_app
             // 
             // txtAnswerFour
             // 
-            this.txtAnswerFour.Location = new System.Drawing.Point(476, 347);
+            this.txtAnswerFour.Location = new System.Drawing.Point(523, 390);
             this.txtAnswerFour.Name = "txtAnswerFour";
             this.txtAnswerFour.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -138,7 +141,7 @@ namespace training_exam_app
             // 
             // txtAnswerThree
             // 
-            this.txtAnswerThree.Location = new System.Drawing.Point(140, 347);
+            this.txtAnswerThree.Location = new System.Drawing.Point(187, 390);
             this.txtAnswerThree.Name = "txtAnswerThree";
             this.txtAnswerThree.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -147,7 +150,7 @@ namespace training_exam_app
             // 
             // txtAnswerTwo
             // 
-            this.txtAnswerTwo.Location = new System.Drawing.Point(476, 298);
+            this.txtAnswerTwo.Location = new System.Drawing.Point(523, 341);
             this.txtAnswerTwo.Name = "txtAnswerTwo";
             this.txtAnswerTwo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -156,7 +159,7 @@ namespace training_exam_app
             // 
             // txtAnswerOne
             // 
-            this.txtAnswerOne.Location = new System.Drawing.Point(140, 298);
+            this.txtAnswerOne.Location = new System.Drawing.Point(187, 341);
             this.txtAnswerOne.Name = "txtAnswerOne";
             this.txtAnswerOne.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -166,7 +169,7 @@ namespace training_exam_app
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(481, 327);
+            this.label5.Location = new System.Drawing.Point(528, 370);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 21;
@@ -175,7 +178,7 @@ namespace training_exam_app
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(481, 278);
+            this.label4.Location = new System.Drawing.Point(528, 321);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 17);
             this.label4.TabIndex = 20;
@@ -183,24 +186,58 @@ namespace training_exam_app
             // 
             // questionContent
             // 
-            this.questionContent.Location = new System.Drawing.Point(140, 145);
+            this.questionContent.Location = new System.Drawing.Point(187, 168);
             this.questionContent.Name = "questionContent";
             this.questionContent.Size = new System.Drawing.Size(599, 126);
             this.questionContent.TabIndex = 19;
             this.questionContent.Text = "";
             // 
-            // vScrollBar1
+            // label2
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(853, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(26, 573);
-            this.vScrollBar1.TabIndex = 29;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(184, 317);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Answer 1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(184, 370);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 17);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Answer 3";
+            // 
+            // rbtnAnswerStateFour
+            // 
+            this.rbtnAnswerStateFour.AutoSize = true;
+            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(771, 393);
+            this.rbtnAnswerStateFour.Name = "rbtnAnswerStateFour";
+            this.rbtnAnswerStateFour.Size = new System.Drawing.Size(17, 16);
+            this.rbtnAnswerStateFour.TabIndex = 33;
+            this.rbtnAnswerStateFour.TabStop = true;
+            this.rbtnAnswerStateFour.UseVisualStyleBackColor = true;
+            // 
+            // rbtnAnswerStateTwo
+            // 
+            this.rbtnAnswerStateTwo.AutoSize = true;
+            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(771, 344);
+            this.rbtnAnswerStateTwo.Name = "rbtnAnswerStateTwo";
+            this.rbtnAnswerStateTwo.Size = new System.Drawing.Size(17, 16);
+            this.rbtnAnswerStateTwo.TabIndex = 32;
+            this.rbtnAnswerStateTwo.TabStop = true;
+            this.rbtnAnswerStateTwo.UseVisualStyleBackColor = true;
             // 
             // TrainingModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.rbtnAnswerStateFour);
+            this.Controls.Add(this.rbtnAnswerStateTwo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.rbtnAnswerStateThree);
             this.Controls.Add(this.rbtnAnswerStateOne);
             this.Controls.Add(this.btnSave);
@@ -217,7 +254,7 @@ namespace training_exam_app
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.lblHeader);
             this.Name = "TrainingModule";
-            this.Size = new System.Drawing.Size(879, 576);
+            this.Size = new System.Drawing.Size(964, 681);
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerFour.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerThree.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerTwo.Properties)).EndInit();
@@ -244,6 +281,9 @@ namespace training_exam_app
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox questionContent;
-        private DevExpress.XtraEditors.VScrollBar vScrollBar1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton rbtnAnswerStateFour;
+        private System.Windows.Forms.RadioButton rbtnAnswerStateTwo;
     }
 }

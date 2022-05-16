@@ -33,15 +33,13 @@ namespace training_exam_app
         private void lblSignUp_Click(object sender, System.EventArgs e)
         {
             var signUp = new SignUp();
-            this.Hide();
-            signUp.Show();
+            signUp.ShowDialog();
         }
 
         private void lblForgotPassword_Click(object sender, System.EventArgs e)
         {
             var forgotPassword = new ForgotPassword();
-            this.Hide();
-            forgotPassword.Show();
+            forgotPassword.ShowDialog();
         }
     }
 }

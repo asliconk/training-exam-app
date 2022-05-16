@@ -35,17 +35,16 @@ namespace training_exam_app
             this.lblLastName = new DevExpress.XtraEditors.LabelControl();
             this.lblFirstName = new DevExpress.XtraEditors.LabelControl();
             this.txtEMail = new DevExpress.XtraEditors.TextEdit();
-            this.txtUserType = new DevExpress.XtraEditors.TextEdit();
             this.lblEMail = new DevExpress.XtraEditors.LabelControl();
             this.lblUserType = new DevExpress.XtraEditors.LabelControl();
             this.txtPassword = new DevExpress.XtraEditors.TextEdit();
             this.lblPassword = new DevExpress.XtraEditors.LabelControl();
             this.btnSignUp = new DevExpress.XtraEditors.SimpleButton();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.cbUserType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
@@ -91,13 +90,6 @@ namespace training_exam_app
             this.txtEMail.Size = new System.Drawing.Size(308, 22);
             this.txtEMail.TabIndex = 18;
             // 
-            // txtUserType
-            // 
-            this.txtUserType.Location = new System.Drawing.Point(67, 213);
-            this.txtUserType.Name = "txtUserType";
-            this.txtUserType.Size = new System.Drawing.Size(308, 22);
-            this.txtUserType.TabIndex = 17;
-            // 
             // lblEMail
             // 
             this.lblEMail.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -141,12 +133,25 @@ namespace training_exam_app
             this.btnSignUp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSignUp.Appearance.Options.UseBackColor = true;
             this.btnSignUp.Appearance.Options.UseFont = true;
-            this.btnSignUp.Location = new System.Drawing.Point(67, 393);
+            this.btnSignUp.Location = new System.Drawing.Point(63, 384);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(308, 36);
             this.btnSignUp.TabIndex = 21;
             this.btnSignUp.Text = "SIGN UP";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
+            // cbUserType
+            // 
+            this.cbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUserType.FormattingEnabled = true;
+            this.cbUserType.Items.AddRange(new object[] {
+            "Admin",
+            "Examiner",
+            "Student"});
+            this.cbUserType.Location = new System.Drawing.Point(63, 213);
+            this.cbUserType.Name = "cbUserType";
+            this.cbUserType.Size = new System.Drawing.Size(308, 24);
+            this.cbUserType.TabIndex = 23;
             // 
             // SignUp
             // 
@@ -154,12 +159,12 @@ namespace training_exam_app
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 504);
+            this.ClientSize = new System.Drawing.Size(474, 483);
+            this.Controls.Add(this.cbUserType);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtEMail);
-            this.Controls.Add(this.txtUserType);
             this.Controls.Add(this.lblEMail);
             this.Controls.Add(this.lblUserType);
             this.Controls.Add(this.txtLastName);
@@ -170,10 +175,10 @@ namespace training_exam_app
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtLastName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFirstName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUserType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
@@ -188,12 +193,12 @@ namespace training_exam_app
         private DevExpress.XtraEditors.LabelControl lblLastName;
         private DevExpress.XtraEditors.LabelControl lblFirstName;
         private DevExpress.XtraEditors.TextEdit txtEMail;
-        private DevExpress.XtraEditors.TextEdit txtUserType;
         private DevExpress.XtraEditors.LabelControl lblEMail;
         private DevExpress.XtraEditors.LabelControl lblUserType;
         private DevExpress.XtraEditors.TextEdit txtPassword;
         private DevExpress.XtraEditors.LabelControl lblPassword;
         private DevExpress.XtraEditors.SimpleButton btnSignUp;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private System.Windows.Forms.ComboBox cbUserType;
     }
 }

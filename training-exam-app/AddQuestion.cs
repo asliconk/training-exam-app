@@ -50,6 +50,12 @@ namespace training_exam_app
             {
                 _question = _question.GetQuestion(this._question.Id);
                 questionContent.Text = _question.QuestionContent;
+                txtAnswerOne.Text = _question.QuestionAnswers[0].AnswerContent;
+                txtAnswerTwo.Text = _question.QuestionAnswers[1].AnswerContent;
+                txtAnswerThree.Text = _question.QuestionAnswers[2].AnswerContent;
+                txtAnswerFour.Text = _question.QuestionAnswers[3].AnswerContent;
+                
+
             }
             else
             {

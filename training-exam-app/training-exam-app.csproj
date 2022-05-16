@@ -73,6 +73,12 @@
     <Compile Include="Concrete\UserSettings.cs" />
     <Compile Include="Concrete\UserType.cs" />
     <Compile Include="Concrete\User.cs" />
+    <Compile Include="ExamModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExamModule.Designer.cs">
+      <DependentUpon>ExamModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,8 +117,17 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrainingModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrainingModule.Designer.cs">
+      <DependentUpon>TrainingModule.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddQuestion.resx">
       <DependentUpon>AddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamModule.resx">
+      <DependentUpon>ExamModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainingModule.resx">
+      <DependentUpon>TrainingModule.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

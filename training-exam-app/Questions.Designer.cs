@@ -35,13 +35,14 @@ namespace training_exam_app
             this.questionApprove = new System.Windows.Forms.ToolStripMenuItem();
             this.questionDontApprove = new System.Windows.Forms.ToolStripMenuItem();
             this.updateQuestion = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteQuestion = new System.Windows.Forms.ToolStripMenuItem();
             this.gvQuestions = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.deleteQuestion = new System.Windows.Forms.ToolStripMenuItem();
+            this.yenile = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdQuestions)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvQuestions)).BeginInit();
@@ -63,12 +64,13 @@ namespace training_exam_app
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yenile,
             this.questionApprove,
             this.questionDontApprove,
             this.updateQuestion,
             this.deleteQuestion});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(239, 128);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(239, 152);
             // 
             // questionApprove
             // 
@@ -90,6 +92,13 @@ namespace training_exam_app
             this.updateQuestion.Size = new System.Drawing.Size(238, 24);
             this.updateQuestion.Text = "Update Question";
             this.updateQuestion.Click += new System.EventHandler(this.updateQuestion_Click);
+            // 
+            // deleteQuestion
+            // 
+            this.deleteQuestion.Name = "deleteQuestion";
+            this.deleteQuestion.Size = new System.Drawing.Size(238, 24);
+            this.deleteQuestion.Text = "Delete Question";
+            this.deleteQuestion.Click += new System.EventHandler(this.deleteQuestion_Click);
             // 
             // gvQuestions
             // 
@@ -166,12 +175,12 @@ namespace training_exam_app
             this.gridColumn5.VisibleIndex = 4;
             this.gridColumn5.Width = 94;
             // 
-            // deleteQuestion
+            // yenile
             // 
-            this.deleteQuestion.Name = "deleteQuestion";
-            this.deleteQuestion.Size = new System.Drawing.Size(238, 24);
-            this.deleteQuestion.Text = "Delete Question";
-            this.deleteQuestion.Click += new System.EventHandler(this.deleteQuestion_Click);
+            this.yenile.Name = "yenile";
+            this.yenile.Size = new System.Drawing.Size(238, 24);
+            this.yenile.Text = "Yenile";
+            this.yenile.Click += new System.EventHandler(this.yenile_Click);
             // 
             // QuestionsControl
             // 
@@ -202,5 +211,6 @@ namespace training_exam_app
         private System.Windows.Forms.ToolStripMenuItem questionDontApprove;
         private System.Windows.Forms.ToolStripMenuItem updateQuestion;
         private System.Windows.Forms.ToolStripMenuItem deleteQuestion;
+        private System.Windows.Forms.ToolStripMenuItem yenile;
     }
 }

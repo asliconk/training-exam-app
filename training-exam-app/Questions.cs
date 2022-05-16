@@ -60,5 +60,10 @@ namespace training_exam_app
             this.question.DeleteQuestion(Convert.ToInt32(gvQuestions.GetRowCellValue(gvQuestions.FocusedRowHandle, "Id")));
             this.LoadData();
         }
+
+        private void yenile_Click(object sender, EventArgs e)
+        {
+            this.LoadData();
+        }
     }
 }

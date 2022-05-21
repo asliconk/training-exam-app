@@ -31,6 +31,32 @@ namespace training_exam_app.Concrete
             return DatabaseTransactions.ExecuteDataTable("SELECT tblQuestions.*, tblQuestionModules.ModuleName, tblSubjects.SubjectName FROM tblQuestions INNER JOIN tblSubjects ON tblQuestions.QuestionSubjectId=tblSubjects.Id INNER JOIN tblQuestionModules ON tblQuestionModules.Id=tblSubjects.ModulId ORDER BY tblQuestions.Id DESC");
         }
 
+        public List<Question> GetRandomTenQuestion()
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@QuestionStatus", SqlDbType.Int)
+            };
+            parameters[0].Value = (int)QuestionStatus.approved;
+            DataTable questionData = new DataTable();
+            questionData= DatabaseTransactions.ExecuteDataTable("SELECT TOP 10 * FROM tblQuestions WHERE QuestionStatus=@QuestionStatus ORDER BY NEWID();", parameters);
+            List<Question> questionList = new List<Question>();
+            Answer answer = new Answer();
+            for (int i = 0; i < questionData.Rows.Count; i++)
+            {
+
+                questionList.Add(new Question {
+                    Id = (int)questionData.Rows[i]["Id"],
+                    QuestionContent = (string)questionData.Rows[i]["QuestionContent"],
+                    QuestionImagePath = (string)questionData.Rows[i]["QuestionImagePath"],
+                    QuestionSubjectId = (int)questionData.Rows[i]["QuestionSubjectId"],
+                    QuestionStatus = (QuestionStatus)questionData.Rows[i]["QuestionStatus"],
+                    QuestionAnswers = answer.GetQuestionAnswers((int)questionData.Rows[i]["Id"])
+                });
+            }
+            return questionList;
+        }
+
         public void UpdateQuestionStatus(int Id, QuestionStatus status)
         {
             SqlParameter[] parameters = new SqlParameter[]
@@ -84,7 +110,6 @@ namespace training_exam_app.Concrete
                 new SqlParameter("@QuestionImagePath", SqlDbType.NVarChar),
                 new SqlParameter("@QuestionSubjectId", SqlDbType.Int),
                 new SqlParameter("@QuestionContent", SqlDbType.NText),
-
             };
             if ((int)this.QuestionStatus == 0 || string.IsNullOrEmpty(this.QuestionContent)  || this.QuestionSubjectId == 0 || this.Id == 0)
             {

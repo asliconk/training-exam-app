@@ -86,13 +86,8 @@ namespace training_exam_app
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            if (!container.Controls.Contains(SettingsStudent.InstanceQuestions))
-            {
-                container.Controls.Add(SettingsStudent.InstanceQuestions);
-                SettingsStudent.InstanceQuestions.Dock = DockStyle.Fill;
-            }
-            SettingsStudent.InstanceQuestions.BringToFront();
-            this.Text = @"Questions";
+            var settings = new Settings();
+            settings.ShowDialog();
         }
     }
 }

@@ -29,37 +29,27 @@ namespace training_exam_app
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtQuestionText = new DevExpress.XtraEditors.TextEdit();
             this.lblSolving2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.lblSolving3 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.lblSolving5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.lblSolving4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.lblSolving6 = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txtQuestionText.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.textBoxSigma1 = new System.Windows.Forms.TextBox();
+            this.textBoxSigma2 = new System.Windows.Forms.TextBox();
+            this.textBoxSigma3 = new System.Windows.Forms.TextBox();
+            this.textBoxSigma4 = new System.Windows.Forms.TextBox();
+            this.textBoxSigma5 = new System.Windows.Forms.TextBox();
+            this.textBoxSigma6 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtQuestionText
-            // 
-            this.txtQuestionText.Location = new System.Drawing.Point(49, 96);
-            this.txtQuestionText.Name = "txtQuestionText";
-            this.txtQuestionText.Size = new System.Drawing.Size(308, 22);
-            this.txtQuestionText.TabIndex = 26;
             // 
             // lblSolving2
             // 
             this.lblSolving2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSolving2.Appearance.Options.UseFont = true;
-            this.lblSolving2.Location = new System.Drawing.Point(49, 60);
+            this.lblSolving2.Location = new System.Drawing.Point(46, 132);
             this.lblSolving2.Name = "lblSolving2";
             this.lblSolving2.Size = new System.Drawing.Size(77, 21);
             this.lblSolving2.TabIndex = 25;
@@ -79,65 +69,37 @@ namespace training_exam_app
             // 
             this.lblSolving3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSolving3.Appearance.Options.UseFont = true;
-            this.lblSolving3.Location = new System.Drawing.Point(49, 137);
+            this.lblSolving3.Location = new System.Drawing.Point(46, 209);
             this.lblSolving3.Name = "lblSolving3";
             this.lblSolving3.Size = new System.Drawing.Size(77, 21);
             this.lblSolving3.TabIndex = 28;
             this.lblSolving3.Text = "3. Solving:";
             // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(49, 177);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(308, 22);
-            this.textEdit1.TabIndex = 29;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(49, 339);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(308, 22);
-            this.textEdit2.TabIndex = 33;
-            // 
             // lblSolving5
             // 
             this.lblSolving5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSolving5.Appearance.Options.UseFont = true;
-            this.lblSolving5.Location = new System.Drawing.Point(49, 299);
+            this.lblSolving5.Location = new System.Drawing.Point(46, 371);
             this.lblSolving5.Name = "lblSolving5";
             this.lblSolving5.Size = new System.Drawing.Size(77, 21);
             this.lblSolving5.TabIndex = 32;
             this.lblSolving5.Text = "5. Solving:";
             // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(49, 258);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(308, 22);
-            this.textEdit3.TabIndex = 31;
-            // 
             // lblSolving4
             // 
             this.lblSolving4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSolving4.Appearance.Options.UseFont = true;
-            this.lblSolving4.Location = new System.Drawing.Point(49, 222);
+            this.lblSolving4.Location = new System.Drawing.Point(46, 294);
             this.lblSolving4.Name = "lblSolving4";
             this.lblSolving4.Size = new System.Drawing.Size(77, 21);
             this.lblSolving4.TabIndex = 30;
             this.lblSolving4.Text = "4. Solving:";
             // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(49, 417);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(308, 22);
-            this.textEdit5.TabIndex = 35;
-            // 
             // lblSolving6
             // 
             this.lblSolving6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblSolving6.Appearance.Options.UseFont = true;
-            this.lblSolving6.Location = new System.Drawing.Point(49, 381);
+            this.lblSolving6.Location = new System.Drawing.Point(46, 453);
             this.lblSolving6.Name = "lblSolving6";
             this.lblSolving6.Size = new System.Drawing.Size(77, 21);
             this.lblSolving6.TabIndex = 34;
@@ -149,54 +111,108 @@ namespace training_exam_app
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSave.Appearance.Options.UseBackColor = true;
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.Location = new System.Drawing.Point(49, 475);
+            this.btnSave.Location = new System.Drawing.Point(46, 547);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(308, 36);
             this.btnSave.TabIndex = 36;
             this.btnSave.Text = "SAVE";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(46, 50);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(77, 21);
+            this.labelControl2.TabIndex = 37;
+            this.labelControl2.Text = "1. Solving:";
+            // 
+            // textBoxSigma1
+            // 
+            this.textBoxSigma1.Location = new System.Drawing.Point(46, 89);
+            this.textBoxSigma1.Name = "textBoxSigma1";
+            this.textBoxSigma1.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma1.TabIndex = 39;
+            // 
+            // textBoxSigma2
+            // 
+            this.textBoxSigma2.Location = new System.Drawing.Point(46, 169);
+            this.textBoxSigma2.Name = "textBoxSigma2";
+            this.textBoxSigma2.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma2.TabIndex = 40;
+            // 
+            // textBoxSigma3
+            // 
+            this.textBoxSigma3.Location = new System.Drawing.Point(46, 250);
+            this.textBoxSigma3.Name = "textBoxSigma3";
+            this.textBoxSigma3.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma3.TabIndex = 41;
+            // 
+            // textBoxSigma4
+            // 
+            this.textBoxSigma4.Location = new System.Drawing.Point(46, 332);
+            this.textBoxSigma4.Name = "textBoxSigma4";
+            this.textBoxSigma4.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma4.TabIndex = 42;
+            // 
+            // textBoxSigma5
+            // 
+            this.textBoxSigma5.Location = new System.Drawing.Point(46, 412);
+            this.textBoxSigma5.Name = "textBoxSigma5";
+            this.textBoxSigma5.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma5.TabIndex = 43;
+            // 
+            // textBoxSigma6
+            // 
+            this.textBoxSigma6.Location = new System.Drawing.Point(46, 490);
+            this.textBoxSigma6.Name = "textBoxSigma6";
+            this.textBoxSigma6.Size = new System.Drawing.Size(308, 23);
+            this.textBoxSigma6.TabIndex = 44;
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 544);
+            this.ClientSize = new System.Drawing.Size(399, 620);
+            this.Controls.Add(this.textBoxSigma6);
+            this.Controls.Add(this.textBoxSigma5);
+            this.Controls.Add(this.textBoxSigma4);
+            this.Controls.Add(this.textBoxSigma3);
+            this.Controls.Add(this.textBoxSigma2);
+            this.Controls.Add(this.textBoxSigma1);
+            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.lblSolving6);
-            this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.lblSolving5);
-            this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.lblSolving4);
-            this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.lblSolving3);
             this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.txtQuestionText);
             this.Controls.Add(this.lblSolving2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Settings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
-            ((System.ComponentModel.ISupportInitialize)(this.txtQuestionText.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            this.Load += new System.EventHandler(this.Settings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.TextEdit txtQuestionText;
         private DevExpress.XtraEditors.LabelControl lblSolving2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl lblSolving3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl lblSolving5;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.LabelControl lblSolving4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.LabelControl lblSolving6;
         private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.TextBox textBoxSigma1;
+        private System.Windows.Forms.TextBox textBoxSigma2;
+        private System.Windows.Forms.TextBox textBoxSigma3;
+        private System.Windows.Forms.TextBox textBoxSigma4;
+        private System.Windows.Forms.TextBox textBoxSigma5;
+        private System.Windows.Forms.TextBox textBoxSigma6;
     }
 }

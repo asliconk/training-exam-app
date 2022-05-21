@@ -45,6 +45,10 @@ namespace training_exam_app
             this.rbtnAnswerStateThree = new System.Windows.Forms.RadioButton();
             this.rbtnAnswerStateTwo = new System.Windows.Forms.RadioButton();
             this.rbtnAnswerStateFour = new System.Windows.Forms.RadioButton();
+            this.cboxModule = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboxSubject = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerOne.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerTwo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAnswerThree.Properties)).BeginInit();
@@ -71,7 +75,7 @@ namespace training_exam_app
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 160);
+            this.label2.Location = new System.Drawing.Point(20, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 5;
@@ -80,7 +84,7 @@ namespace training_exam_app
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 209);
+            this.label3.Location = new System.Drawing.Point(20, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 7;
@@ -150,7 +154,7 @@ namespace training_exam_app
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(466, 261);
+            this.btnSave.Location = new System.Drawing.Point(466, 313);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 47);
             this.btnSave.TabIndex = 16;
@@ -198,11 +202,52 @@ namespace training_exam_app
             this.rbtnAnswerStateFour.TabStop = true;
             this.rbtnAnswerStateFour.UseVisualStyleBackColor = true;
             // 
+            // cboxModule
+            // 
+            this.cboxModule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxModule.FormattingEnabled = true;
+            this.cboxModule.Location = new System.Drawing.Point(12, 284);
+            this.cboxModule.Name = "cboxModule";
+            this.cboxModule.Size = new System.Drawing.Size(245, 24);
+            this.cboxModule.TabIndex = 21;
+            this.cboxModule.SelectedIndexChanged += new System.EventHandler(this.cboxModule_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 264);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Module";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(356, 261);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 17);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Subject";
+            // 
+            // cboxSubject
+            // 
+            this.cboxSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxSubject.FormattingEnabled = true;
+            this.cboxSubject.Location = new System.Drawing.Point(351, 281);
+            this.cboxSubject.Name = "cboxSubject";
+            this.cboxSubject.Size = new System.Drawing.Size(245, 24);
+            this.cboxSubject.TabIndex = 23;
+            // 
             // AddQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 372);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cboxSubject);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cboxModule);
             this.Controls.Add(this.rbtnAnswerStateFour);
             this.Controls.Add(this.rbtnAnswerStateTwo);
             this.Controls.Add(this.rbtnAnswerStateThree);
@@ -250,5 +295,9 @@ namespace training_exam_app
         private System.Windows.Forms.RadioButton rbtnAnswerStateThree;
         private System.Windows.Forms.RadioButton rbtnAnswerStateTwo;
         private System.Windows.Forms.RadioButton rbtnAnswerStateFour;
+        private System.Windows.Forms.ComboBox cboxModule;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboxSubject;
     }
 }

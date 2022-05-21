@@ -70,7 +70,7 @@ namespace training_exam_app
         {
             this.answerState();
             ++questionOfNumber;
-            if(questionOfNumber <10)
+            if(questionOfNumber < questions.Count)
             {
                 lblQuestionNumber.Text = (questionOfNumber + 1).ToString();
                 currentQuestion = questions[questionOfNumber];
@@ -86,7 +86,7 @@ namespace training_exam_app
         {
             ++questionOfNumber;
             ++emptyOfNumber;
-            if (questionOfNumber < 10)
+            if (questionOfNumber < questions.Count)
             {
                 lblQuestionNumber.Text = (questionOfNumber + 1).ToString();
                 currentQuestion = questions[questionOfNumber];

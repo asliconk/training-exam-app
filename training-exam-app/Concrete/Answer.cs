@@ -50,7 +50,8 @@ namespace training_exam_app.Concrete
             parameters[2].Value = this.AnswerImagePath;
             parameters[3].Value = this.AnswerContent;
             parameters[4].Value = this.Id;
-            int execute = DatabaseTransactions.ExecuteNonQuery("UPDATE tblAnswers VALUES (AnswerState=@AnswerState, QuestionId=@QuestionId, AnswerImagePath=@AnswerImagePath, AnswerContent=@AnswerContent)", parameters);
+
+            int execute = DatabaseTransactions.ExecuteNonQuery("UPDATE tblAnswers SET AnswerState=@AnswerState, QuestionId=@QuestionId, AnswerImagePath=@AnswerImagePath, AnswerContent=@AnswerContent WHERE Id=@Id", parameters);
             if (execute == -1)
             {
                 return false;

@@ -15,6 +15,7 @@ namespace training_exam_app.Concrete
         public int QuestionSubjectId { get; set; }
         public string QuestionContent { get; set; }
         public List<Answer> QuestionAnswers { get; set; }
+        public int ModuleId { get; set; }
 
         private void ExecuteState(int execute)
         {
@@ -28,7 +29,7 @@ namespace training_exam_app.Concrete
 
         public DataTable GetQuestions()
         {
-            return DatabaseTransactions.ExecuteDataTable("SELECT tblQuestions.*, tblQuestionModules.ModuleName, tblSubjects.SubjectName FROM tblQuestions INNER JOIN tblSubjects ON tblQuestions.QuestionSubjectId=tblSubjects.Id INNER JOIN tblQuestionModules ON tblQuestionModules.Id=tblSubjects.ModulId ORDER BY tblQuestions.Id DESC");
+            return DatabaseTransactions.ExecuteDataTable("SELECT tblQuestions.*, tblQuestionModules.ModuleName, tblSubjects.SubjectName FROM tblQuestions INNER JOIN tblSubjects ON tblQuestions.QuestionSubjectId=tblSubjects.Id INNER JOIN tblQuestionModules ON tblQuestionModules.Id=tblSubjects.ModuleId ORDER BY tblQuestions.Id DESC");
         }
 
         public List<Question> GetRandomTenQuestion()
@@ -121,22 +122,17 @@ namespace training_exam_app.Concrete
             parameters[2].Value = this.QuestionImagePath;
             parameters[3].Value = this.QuestionSubjectId;
             parameters[4].Value = this.QuestionContent;
-            foreach (var item in parameters)
-            {
-                MessageBox.Show(item.Value.ToString());
 
-            }
-            var questionId = DatabaseTransactions.ExecuteScalar("UPDATE tblQuestions SET QuestionStatus=@QuestionStatus, QuestionImagePath=@QuestionImagePath,QuestionSubjectId=@QuestionSubjectId, QuestionContent=@QuestionContent where Id=@Id;", parameters);
-            MessageBox.Show(questionId.ToString());
-            if (questionId == null)
+            var execute = DatabaseTransactions.ExecuteNonQuery("UPDATE tblQuestions SET QuestionStatus=@QuestionStatus, QuestionImagePath=@QuestionImagePath,QuestionSubjectId=@QuestionSubjectId, QuestionContent=@QuestionContent where Id=@Id;", parameters);
+            if (execute == -1)
             {
-                ExecuteState(-1);
+                ExecuteState(execute);
                 return false;
             }
 
             foreach (var answer in this.QuestionAnswers)
             {
-                answer.QuestionId = Convert.ToInt32(questionId);
+                answer.QuestionId = Convert.ToInt32(this.Id);
                 if (!answer.UpdateAnswer())
                     ExecuteState(-1);
             }
@@ -151,7 +147,7 @@ namespace training_exam_app.Concrete
             };
             parameters[0].Value = questionId;
             DataTable userData = DatabaseTransactions.ExecuteDataTable(
-                @"SELECT * FROM tblQuestions WHERE Id=@QuestionId", parameters);
+                @"SELECT tblQuestions.*, tblQuestionModules.Id AS 'ModuleId' FROM tblQuestions INNER JOIN tblSubjects ON tblSubjects.Id=tblQuestions.QuestionSubjectId INNER JOIN tblQuestionModules ON tblQuestionModules.Id=tblSubjects.ModuleId WHERE tblQuestions.Id=@QuestionId", parameters);
             var question = new Question();
             if (userData.Rows.Count > 0)
             {
@@ -160,6 +156,7 @@ namespace training_exam_app.Concrete
                 question.QuestionImagePath = (string)userData.Rows[0]["QuestionImagePath"];
                 question.QuestionContent = (string)userData.Rows[0]["QuestionContent"];
                 question.QuestionSubjectId = (int)userData.Rows[0]["QuestionSubjectId"];
+                question.ModuleId = (int)userData.Rows[0]["ModuleId"];
                 var answer = new Answer();
                 question.QuestionAnswers = answer.GetQuestionAnswers(questionId);
             }

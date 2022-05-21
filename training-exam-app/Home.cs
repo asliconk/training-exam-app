@@ -53,23 +53,25 @@ namespace training_exam_app
 
         private void examModule_Click(object sender, EventArgs e)
         {
-            if (!container.Controls.Contains(ExamModule.InstanceQuestions))
+            TrainingModule.IsSigma = true;
+            if (!container.Controls.Contains(TrainingModule.InstanceExamModule))
             {
-                container.Controls.Add(ExamModule.InstanceQuestions);
-                ExamModule.InstanceQuestions.Dock = DockStyle.Fill;
+                container.Controls.Add(TrainingModule.InstanceExamModule);
+                TrainingModule.InstanceExamModule.Dock = DockStyle.Fill;
             }
-            ExamModule.InstanceQuestions.BringToFront();
+            TrainingModule.InstanceExamModule.BringToFront();
             this.Text = @"Questions";
         }
 
         private void btnTrainingModule_Click(object sender, EventArgs e)
         {
-            if (!container.Controls.Contains(TrainingModule.InstanceQuestions))
+            TrainingModule.IsSigma = false;
+            if (!container.Controls.Contains(TrainingModule.InstanceTrainingModule))
             {
-                container.Controls.Add(TrainingModule.InstanceQuestions);
-                TrainingModule.InstanceQuestions.Dock = DockStyle.Fill;
+                container.Controls.Add(TrainingModule.InstanceTrainingModule);
+                TrainingModule.InstanceTrainingModule.Dock = DockStyle.Fill;
             }
-            TrainingModule.InstanceQuestions.BringToFront();
+            TrainingModule.InstanceTrainingModule.BringToFront();
             this.Text = @"Questions";
         }
 

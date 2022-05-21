@@ -173,5 +173,35 @@ namespace training_exam_app.Concrete
                 @"DELETE FROM tblQuestions WHERE Id=@QuestionId", parameters);
             ExecuteState(execute);
         }
+
+        public List<Question> GetRandomTenSigmaQuestion()
+        {
+            
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@QuestionStatus", SqlDbType.Int),
+                new SqlParameter("@UserId",SqlDbType.Int)
+            };
+            parameters[0].Value = (int)QuestionStatus.approved;
+            parameters[1].Value = CurrentUser.Id;
+            DataTable questionData = new DataTable();
+            questionData = DatabaseTransactions.ExecuteDataTable("SELECT TOP 10 * FROM tblQuestions WHERE Id not in (SELECT QuestionId FROM tblSigma WHERE GETDATE() < SigmaDate AND UserId = @UserId) ORDER BY NEWID();", parameters);
+            List<Question> questionList = new List<Question>();
+            Answer answer = new Answer();
+            for (int i = 0; i < questionData.Rows.Count; i++)
+            {
+
+                questionList.Add(new Question
+                {
+                    Id = (int)questionData.Rows[i]["Id"],
+                    QuestionContent = (string)questionData.Rows[i]["QuestionContent"],
+                    QuestionImagePath = (string)questionData.Rows[i]["QuestionImagePath"],
+                    QuestionSubjectId = (int)questionData.Rows[i]["QuestionSubjectId"],
+                    QuestionStatus = (QuestionStatus)questionData.Rows[i]["QuestionStatus"],
+                    QuestionAnswers = answer.GetQuestionAnswers((int)questionData.Rows[i]["Id"])
+                });
+            }
+            return questionList;
+        }
     }
 }

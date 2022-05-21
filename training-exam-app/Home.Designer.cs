@@ -53,9 +53,9 @@ namespace training_exam_app
             // container
             // 
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container.Location = new System.Drawing.Point(260, 39);
+            this.container.Location = new System.Drawing.Point(276, 39);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(769, 494);
+            this.container.Size = new System.Drawing.Size(753, 494);
             this.container.TabIndex = 0;
             // 
             // accordionControl1
@@ -68,7 +68,7 @@ namespace training_exam_app
             this.accordionControl1.Location = new System.Drawing.Point(0, 39);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 494);
+            this.accordionControl1.Size = new System.Drawing.Size(276, 494);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 

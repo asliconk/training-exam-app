@@ -55,6 +55,7 @@ namespace training_exam_app
             currentQuestion = questions[questionOfNumber];
             showQuestion(currentQuestion);
             grpQuestion.Visible = true;
+            grpAnswer.Visible = false;
         }
 
         private void endQuestion()
@@ -68,7 +69,10 @@ namespace training_exam_app
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            this.answerState();
+            UserAnswers userAnswers = new UserAnswers();
+            userAnswers.QuestionId = currentQuestion.Id;
+            userAnswers.AnswerState = this.answerState();
+            userAnswers.CreateUserAnswers();
             ++questionOfNumber;
             if(questionOfNumber < questions.Count)
             {

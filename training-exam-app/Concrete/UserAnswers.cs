@@ -38,5 +38,14 @@ namespace training_exam_app.Concrete
             int execute = DatabaseTransactions.ExecuteNonQuery("INSERT INTO tblUserAnswers(QuestionId,AnswerState,UserId) VALUES(@QuestionId,@AnswerState,@UserId);", parameters);
             ExecuteState(execute);
         }
+
+        public DataTable GetModuleReport()
+        {
+            SqlParameter[] parameters = new SqlParameter[] {
+                new SqlParameter("@UserId",SqlDbType.NVarChar),
+            };
+            parameters[0].Value = this.UserId;
+            return DatabaseTransactions.ExecuteDataTable("SELECT tblQuestionModules.Id, tblQuestionModules.ModuleName, tblUserAnswers.AnswerState, COUNT(*) AS 'Total' FROM tblUserAnswers INNER JOIN tblQuestions ON tblUserAnswers.QuestionId=tblQuestions.Id INNER JOIN tblSubjects ON tblSubjects.Id=tblQuestions.QuestionSubjectId INNER JOIN tblQuestionModules ON tblSubjects.ModuleId=tblQuestionModules.Id WHERE tblUserAnswers.UserId=@UserId GROUP BY tblQuestionModules.Id, tblQuestionModules.ModuleName, tblUserAnswers.AnswerState",parameters);
+        }
     }
 }

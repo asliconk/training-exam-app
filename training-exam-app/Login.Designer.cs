@@ -47,7 +47,7 @@ namespace training_exam_app
             // 
             // btnSignIn
             // 
-            this.btnSignIn.Appearance.BackColor = System.Drawing.Color.Green;
+            this.btnSignIn.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnSignIn.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSignIn.Appearance.Options.UseBackColor = true;
             this.btnSignIn.Appearance.Options.UseFont = true;

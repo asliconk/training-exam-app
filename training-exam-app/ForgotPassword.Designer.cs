@@ -72,7 +72,7 @@ namespace training_exam_app
             // 
             // btnSend
             // 
-            this.btnSend.Appearance.BackColor = System.Drawing.Color.Green;
+            this.btnSend.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnSend.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSend.Appearance.Options.UseBackColor = true;
             this.btnSend.Appearance.Options.UseFont = true;

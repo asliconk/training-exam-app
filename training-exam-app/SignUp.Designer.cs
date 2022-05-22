@@ -129,7 +129,7 @@ namespace training_exam_app
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Appearance.BackColor = System.Drawing.Color.Green;
+            this.btnSignUp.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnSignUp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSignUp.Appearance.Options.UseBackColor = true;
             this.btnSignUp.Appearance.Options.UseFont = true;

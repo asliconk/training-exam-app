@@ -239,9 +239,9 @@ namespace training_exam_app
             this.lblHeader.Appearance.Options.UseFont = true;
             this.lblHeader.Location = new System.Drawing.Point(371, 99);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(285, 24);
+            this.lblHeader.Size = new System.Drawing.Size(258, 24);
             this.lblHeader.TabIndex = 34;
-            this.lblHeader.Text = "Training Yourself For Real Exam";
+            this.lblHeader.Text = "Train Yourself For Real Exam";
             // 
             // lblSuccessOfNumber
             // 

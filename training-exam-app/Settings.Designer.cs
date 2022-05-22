@@ -59,11 +59,11 @@ namespace training_exam_app
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(111, 23);
+            this.labelControl1.Location = new System.Drawing.Point(77, 12);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(174, 21);
+            this.labelControl1.Size = new System.Drawing.Size(234, 21);
             this.labelControl1.TabIndex = 27;
-            this.labelControl1.Text = "Frequency of Questions";
+            this.labelControl1.Text = "Change Frequency of Questions";
             // 
             // lblSolving3
             // 
@@ -107,7 +107,7 @@ namespace training_exam_app
             // 
             // btnSave
             // 
-            this.btnSave.Appearance.BackColor = System.Drawing.Color.Green;
+            this.btnSave.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSave.Appearance.Options.UseBackColor = true;
             this.btnSave.Appearance.Options.UseFont = true;

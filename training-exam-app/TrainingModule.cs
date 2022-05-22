@@ -147,5 +147,36 @@ namespace training_exam_app
             ++successOfNumber;
             return true;
         }
+        int saniye = 60;
+        int dakika = 0;
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            dakika = Convert.ToInt32(textBox1.Text);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            {
+                timer1.Interval = 1000;
+                saniye = saniye - 1;
+                lblSaniye.Text = Convert.ToString(saniye);
+                lblDakika.Text = Convert.ToString(dakika - 1);
+                if (saniye == 0)
+                {
+
+                    dakika = dakika - 1;
+                    lblDakika.Text = Convert.ToString(dakika);
+                    saniye = 60;
+                }
+
+                if (lblDakika.Text == "-1")
+                {
+                    timer1.Stop();
+                    lblDakika.Text = "00";
+                    lblSaniye.Text = "00";
+                }
+            }
+        }
     }
 }

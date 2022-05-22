@@ -29,6 +29,7 @@ namespace training_exam_app
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +53,14 @@ namespace training_exam_app
             this.lblFailOfNumber = new System.Windows.Forms.Label();
             this.lblEmptyOfNumber = new System.Windows.Forms.Label();
             this.grpAnswer = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.lblDakika = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblSaniye = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.grpQuestion.SuspendLayout();
             this.grpAnswer.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +106,12 @@ namespace training_exam_app
             // 
             // grpQuestion
             // 
+            this.grpQuestion.Controls.Add(this.lblSaniye);
+            this.grpQuestion.Controls.Add(this.label5);
+            this.grpQuestion.Controls.Add(this.lblDakika);
+            this.grpQuestion.Controls.Add(this.simpleButton1);
+            this.grpQuestion.Controls.Add(this.textBox1);
+            this.grpQuestion.Controls.Add(this.label4);
             this.grpQuestion.Controls.Add(this.rbtnAnswerStateFour);
             this.grpQuestion.Controls.Add(this.rbtnAnswerStateTwo);
             this.grpQuestion.Controls.Add(this.lblAnswerStateThree);
@@ -290,6 +305,70 @@ namespace training_exam_app
             this.grpAnswer.TabIndex = 8;
             this.grpAnswer.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(627, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 21);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "Mınute:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(706, 28);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 38);
+            this.textBox1.TabIndex = 53;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.simpleButton1.Appearance.Options.UseBackColor = true;
+            this.simpleButton1.Location = new System.Drawing.Point(826, 28);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(116, 38);
+            this.simpleButton1.TabIndex = 54;
+            this.simpleButton1.Text = "START";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // lblDakika
+            // 
+            this.lblDakika.AutoSize = true;
+            this.lblDakika.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDakika.Location = new System.Drawing.Point(747, 96);
+            this.lblDakika.Name = "lblDakika";
+            this.lblDakika.Size = new System.Drawing.Size(32, 24);
+            this.lblDakika.TabIndex = 55;
+            this.lblDakika.Text = "__";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(806, 99);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 24);
+            this.label5.TabIndex = 56;
+            this.label5.Text = ":";
+            // 
+            // lblSaniye
+            // 
+            this.lblSaniye.AutoSize = true;
+            this.lblSaniye.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSaniye.Location = new System.Drawing.Point(855, 99);
+            this.lblSaniye.Name = "lblSaniye";
+            this.lblSaniye.Size = new System.Drawing.Size(32, 24);
+            this.lblSaniye.TabIndex = 57;
+            this.lblSaniye.Text = "__";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // TrainingModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -333,5 +412,13 @@ namespace training_exam_app
         private System.Windows.Forms.Label lblFailOfNumber;
         private System.Windows.Forms.Label lblEmptyOfNumber;
         private System.Windows.Forms.GroupBox grpAnswer;
+        private System.Windows.Forms.Label lblSaniye;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblDakika;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

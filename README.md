@@ -24,6 +24,8 @@ Visual studio 2022 was used with C# programming language.
 C#
 devexpress
 ```
+![WhatsApp Image 2022-05-23 at 02 19 04](https://user-images.githubusercontent.com/73111871/169720369-f40f76b0-2900-43fd-b73a-5404611a8216.jpeg)
+![WhatsApp Image 2022-05-23 at 02 19 04](https://user-images.githubusercontent.com/73111871/169720375-e643f807-d86c-4a64-92e6-5cd82624bdf9.jpeg)
 
 ## Authors
 * **Aslı Conk** - [https://github.com/asliconk)

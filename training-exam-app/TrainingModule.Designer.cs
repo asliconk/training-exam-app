@@ -58,12 +58,14 @@ namespace training_exam_app
             // 
             // btnStart
             // 
+            this.btnStart.BackColor = System.Drawing.Color.Blue;
+            this.btnStart.ForeColor = System.Drawing.Color.White;
             this.btnStart.Location = new System.Drawing.Point(400, 296);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(195, 108);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Text = "START";
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // label1
@@ -109,9 +111,9 @@ namespace training_exam_app
             this.grpQuestion.Controls.Add(this.lblQuestionNumber);
             this.grpQuestion.Controls.Add(this.labelControl2);
             this.grpQuestion.Controls.Add(this.lblHeader);
-            this.grpQuestion.Location = new System.Drawing.Point(0, 0);
+            this.grpQuestion.Location = new System.Drawing.Point(3, 22);
             this.grpQuestion.Name = "grpQuestion";
-            this.grpQuestion.Size = new System.Drawing.Size(993, 706);
+            this.grpQuestion.Size = new System.Drawing.Size(991, 707);
             this.grpQuestion.TabIndex = 4;
             this.grpQuestion.TabStop = false;
             // 
@@ -171,6 +173,8 @@ namespace training_exam_app
             // 
             // btnSave
             // 
+            this.btnSave.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.btnSave.Appearance.Options.UseBackColor = true;
             this.btnSave.Location = new System.Drawing.Point(706, 581);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 47);
@@ -206,6 +210,8 @@ namespace training_exam_app
             // 
             // btnNext
             // 
+            this.btnNext.Appearance.BackColor = System.Drawing.Color.Blue;
+            this.btnNext.Appearance.Options.UseBackColor = true;
             this.btnNext.Location = new System.Drawing.Point(706, 634);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(109, 58);
@@ -292,7 +298,7 @@ namespace training_exam_app
             this.Controls.Add(this.grpQuestion);
             this.Controls.Add(this.btnStart);
             this.Name = "TrainingModule";
-            this.Size = new System.Drawing.Size(964, 681);
+            this.Size = new System.Drawing.Size(990, 761);
             this.Load += new System.EventHandler(this.TrainingModule_Load);
             this.grpQuestion.ResumeLayout(false);
             this.grpQuestion.PerformLayout();

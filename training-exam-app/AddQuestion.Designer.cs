@@ -57,9 +57,9 @@ namespace training_exam_app
             // 
             // questionContent
             // 
-            this.questionContent.Location = new System.Drawing.Point(15, 31);
+            this.questionContent.Location = new System.Drawing.Point(182, 23);
             this.questionContent.Name = "questionContent";
-            this.questionContent.Size = new System.Drawing.Size(599, 126);
+            this.questionContent.Size = new System.Drawing.Size(719, 283);
             this.questionContent.TabIndex = 0;
             this.questionContent.Text = "";
             // 
@@ -75,7 +75,7 @@ namespace training_exam_app
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 164);
+            this.label2.Location = new System.Drawing.Point(239, 335);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 5;
@@ -84,7 +84,7 @@ namespace training_exam_app
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 213);
+            this.label3.Location = new System.Drawing.Point(239, 384);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
             this.label3.TabIndex = 7;
@@ -93,7 +93,7 @@ namespace training_exam_app
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(356, 164);
+            this.label4.Location = new System.Drawing.Point(575, 335);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 17);
             this.label4.TabIndex = 9;
@@ -102,7 +102,7 @@ namespace training_exam_app
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(356, 213);
+            this.label5.Location = new System.Drawing.Point(575, 384);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 11;
@@ -114,7 +114,7 @@ namespace training_exam_app
             // 
             // txtAnswerOne
             // 
-            this.txtAnswerOne.Location = new System.Drawing.Point(15, 184);
+            this.txtAnswerOne.Location = new System.Drawing.Point(234, 355);
             this.txtAnswerOne.Name = "txtAnswerOne";
             this.txtAnswerOne.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -124,7 +124,7 @@ namespace training_exam_app
             // 
             // txtAnswerTwo
             // 
-            this.txtAnswerTwo.Location = new System.Drawing.Point(351, 184);
+            this.txtAnswerTwo.Location = new System.Drawing.Point(570, 355);
             this.txtAnswerTwo.Name = "txtAnswerTwo";
             this.txtAnswerTwo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -134,7 +134,7 @@ namespace training_exam_app
             // 
             // txtAnswerThree
             // 
-            this.txtAnswerThree.Location = new System.Drawing.Point(15, 233);
+            this.txtAnswerThree.Location = new System.Drawing.Point(234, 404);
             this.txtAnswerThree.Name = "txtAnswerThree";
             this.txtAnswerThree.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -144,7 +144,7 @@ namespace training_exam_app
             // 
             // txtAnswerFour
             // 
-            this.txtAnswerFour.Location = new System.Drawing.Point(351, 233);
+            this.txtAnswerFour.Location = new System.Drawing.Point(570, 404);
             this.txtAnswerFour.Name = "txtAnswerFour";
             this.txtAnswerFour.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
@@ -154,7 +154,7 @@ namespace training_exam_app
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(466, 313);
+            this.btnSave.Location = new System.Drawing.Point(685, 484);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 47);
             this.btnSave.TabIndex = 16;
@@ -165,7 +165,7 @@ namespace training_exam_app
             // 
             this.rbtnAnswerStateOne.AutoSize = true;
             this.rbtnAnswerStateOne.Checked = true;
-            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(263, 187);
+            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(482, 358);
             this.rbtnAnswerStateOne.Name = "rbtnAnswerStateOne";
             this.rbtnAnswerStateOne.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateOne.TabIndex = 17;
@@ -175,7 +175,7 @@ namespace training_exam_app
             // rbtnAnswerStateThree
             // 
             this.rbtnAnswerStateThree.AutoSize = true;
-            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(263, 236);
+            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(482, 407);
             this.rbtnAnswerStateThree.Name = "rbtnAnswerStateThree";
             this.rbtnAnswerStateThree.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateThree.TabIndex = 18;
@@ -185,7 +185,7 @@ namespace training_exam_app
             // rbtnAnswerStateTwo
             // 
             this.rbtnAnswerStateTwo.AutoSize = true;
-            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(597, 187);
+            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(816, 358);
             this.rbtnAnswerStateTwo.Name = "rbtnAnswerStateTwo";
             this.rbtnAnswerStateTwo.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateTwo.TabIndex = 19;
@@ -195,7 +195,7 @@ namespace training_exam_app
             // rbtnAnswerStateFour
             // 
             this.rbtnAnswerStateFour.AutoSize = true;
-            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(597, 236);
+            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(816, 407);
             this.rbtnAnswerStateFour.Name = "rbtnAnswerStateFour";
             this.rbtnAnswerStateFour.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateFour.TabIndex = 20;
@@ -206,7 +206,7 @@ namespace training_exam_app
             // 
             this.cboxModule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxModule.FormattingEnabled = true;
-            this.cboxModule.Location = new System.Drawing.Point(12, 284);
+            this.cboxModule.Location = new System.Drawing.Point(231, 455);
             this.cboxModule.Name = "cboxModule";
             this.cboxModule.Size = new System.Drawing.Size(245, 24);
             this.cboxModule.TabIndex = 21;
@@ -215,7 +215,7 @@ namespace training_exam_app
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 264);
+            this.label6.Location = new System.Drawing.Point(239, 435);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 17);
             this.label6.TabIndex = 22;
@@ -224,7 +224,7 @@ namespace training_exam_app
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(356, 261);
+            this.label7.Location = new System.Drawing.Point(575, 432);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 17);
             this.label7.TabIndex = 24;
@@ -234,7 +234,7 @@ namespace training_exam_app
             // 
             this.cboxSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxSubject.FormattingEnabled = true;
-            this.cboxSubject.Location = new System.Drawing.Point(351, 281);
+            this.cboxSubject.Location = new System.Drawing.Point(570, 452);
             this.cboxSubject.Name = "cboxSubject";
             this.cboxSubject.Size = new System.Drawing.Size(245, 24);
             this.cboxSubject.TabIndex = 23;
@@ -243,7 +243,7 @@ namespace training_exam_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(633, 372);
+            this.ClientSize = new System.Drawing.Size(1123, 677);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cboxSubject);
             this.Controls.Add(this.label6);

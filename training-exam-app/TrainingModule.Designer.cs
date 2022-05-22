@@ -128,14 +128,14 @@ namespace training_exam_app
             this.grpQuestion.Controls.Add(this.lblHeader);
             this.grpQuestion.Location = new System.Drawing.Point(3, 22);
             this.grpQuestion.Name = "grpQuestion";
-            this.grpQuestion.Size = new System.Drawing.Size(991, 707);
+            this.grpQuestion.Size = new System.Drawing.Size(1014, 753);
             this.grpQuestion.TabIndex = 4;
             this.grpQuestion.TabStop = false;
             // 
             // rbtnAnswerStateFour
             // 
             this.rbtnAnswerStateFour.AutoSize = true;
-            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(221, 395);
+            this.rbtnAnswerStateFour.Location = new System.Drawing.Point(229, 558);
             this.rbtnAnswerStateFour.Name = "rbtnAnswerStateFour";
             this.rbtnAnswerStateFour.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateFour.TabIndex = 51;
@@ -144,7 +144,7 @@ namespace training_exam_app
             // rbtnAnswerStateTwo
             // 
             this.rbtnAnswerStateTwo.AutoSize = true;
-            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(221, 351);
+            this.rbtnAnswerStateTwo.Location = new System.Drawing.Point(229, 514);
             this.rbtnAnswerStateTwo.Name = "rbtnAnswerStateTwo";
             this.rbtnAnswerStateTwo.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateTwo.TabIndex = 50;
@@ -153,7 +153,7 @@ namespace training_exam_app
             // lblAnswerStateThree
             // 
             this.lblAnswerStateThree.AutoSize = true;
-            this.lblAnswerStateThree.Location = new System.Drawing.Point(244, 373);
+            this.lblAnswerStateThree.Location = new System.Drawing.Point(252, 536);
             this.lblAnswerStateThree.Name = "lblAnswerStateThree";
             this.lblAnswerStateThree.Size = new System.Drawing.Size(64, 17);
             this.lblAnswerStateThree.TabIndex = 49;
@@ -162,7 +162,7 @@ namespace training_exam_app
             // lblAnswerStateOne
             // 
             this.lblAnswerStateOne.AutoSize = true;
-            this.lblAnswerStateOne.Location = new System.Drawing.Point(244, 328);
+            this.lblAnswerStateOne.Location = new System.Drawing.Point(252, 491);
             this.lblAnswerStateOne.Name = "lblAnswerStateOne";
             this.lblAnswerStateOne.Size = new System.Drawing.Size(64, 17);
             this.lblAnswerStateOne.TabIndex = 48;
@@ -171,7 +171,7 @@ namespace training_exam_app
             // rbtnAnswerStateThree
             // 
             this.rbtnAnswerStateThree.AutoSize = true;
-            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(221, 373);
+            this.rbtnAnswerStateThree.Location = new System.Drawing.Point(229, 536);
             this.rbtnAnswerStateThree.Name = "rbtnAnswerStateThree";
             this.rbtnAnswerStateThree.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateThree.TabIndex = 47;
@@ -180,7 +180,7 @@ namespace training_exam_app
             // rbtnAnswerStateOne
             // 
             this.rbtnAnswerStateOne.AutoSize = true;
-            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(221, 329);
+            this.rbtnAnswerStateOne.Location = new System.Drawing.Point(229, 492);
             this.rbtnAnswerStateOne.Name = "rbtnAnswerStateOne";
             this.rbtnAnswerStateOne.Size = new System.Drawing.Size(17, 16);
             this.rbtnAnswerStateOne.TabIndex = 46;
@@ -190,7 +190,7 @@ namespace training_exam_app
             // 
             this.btnSave.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnSave.Appearance.Options.UseBackColor = true;
-            this.btnSave.Location = new System.Drawing.Point(706, 581);
+            this.btnSave.Location = new System.Drawing.Point(794, 582);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 47);
             this.btnSave.TabIndex = 45;
@@ -200,7 +200,7 @@ namespace training_exam_app
             // lblAnswerStateFour
             // 
             this.lblAnswerStateFour.AutoSize = true;
-            this.lblAnswerStateFour.Location = new System.Drawing.Point(244, 395);
+            this.lblAnswerStateFour.Location = new System.Drawing.Point(252, 558);
             this.lblAnswerStateFour.Name = "lblAnswerStateFour";
             this.lblAnswerStateFour.Size = new System.Drawing.Size(64, 17);
             this.lblAnswerStateFour.TabIndex = 40;
@@ -209,7 +209,7 @@ namespace training_exam_app
             // lblAnswerStateTwo
             // 
             this.lblAnswerStateTwo.AutoSize = true;
-            this.lblAnswerStateTwo.Location = new System.Drawing.Point(244, 351);
+            this.lblAnswerStateTwo.Location = new System.Drawing.Point(252, 514);
             this.lblAnswerStateTwo.Name = "lblAnswerStateTwo";
             this.lblAnswerStateTwo.Size = new System.Drawing.Size(64, 17);
             this.lblAnswerStateTwo.TabIndex = 39;
@@ -217,9 +217,9 @@ namespace training_exam_app
             // 
             // questionContent
             // 
-            this.questionContent.Location = new System.Drawing.Point(226, 180);
+            this.questionContent.Location = new System.Drawing.Point(226, 169);
             this.questionContent.Name = "questionContent";
-            this.questionContent.Size = new System.Drawing.Size(599, 126);
+            this.questionContent.Size = new System.Drawing.Size(677, 301);
             this.questionContent.TabIndex = 38;
             this.questionContent.Text = "";
             // 
@@ -227,7 +227,7 @@ namespace training_exam_app
             // 
             this.btnNext.Appearance.BackColor = System.Drawing.Color.Blue;
             this.btnNext.Appearance.Options.UseBackColor = true;
-            this.btnNext.Location = new System.Drawing.Point(706, 634);
+            this.btnNext.Location = new System.Drawing.Point(794, 635);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(109, 58);
             this.btnNext.TabIndex = 37;
@@ -377,7 +377,7 @@ namespace training_exam_app
             this.Controls.Add(this.grpQuestion);
             this.Controls.Add(this.btnStart);
             this.Name = "TrainingModule";
-            this.Size = new System.Drawing.Size(990, 761);
+            this.Size = new System.Drawing.Size(1231, 778);
             this.Load += new System.EventHandler(this.TrainingModule_Load);
             this.grpQuestion.ResumeLayout(false);
             this.grpQuestion.PerformLayout();

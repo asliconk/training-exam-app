@@ -29,15 +29,28 @@ Login Screen
 
 ![WhatsApp Image 2022-05-23 at 02 19 04](https://user-images.githubusercontent.com/73111871/169720369-f40f76b0-2900-43fd-b73a-5404611a8216.jpeg)
 
+Sign up Screen
+
+![WhatsApp Image 2022-05-23 at 02 27 44](https://user-images.githubusercontent.com/73111871/169720654-8647134b-e35a-4887-a6fe-370a55cd7652.jpeg)
+
+Reset password screen
+
+![WhatsApp Image 2022-05-23 at 02 28 07](https://user-images.githubusercontent.com/73111871/169720681-66881031-02dc-444e-ade5-c8a08545b411.jpeg)
+
 Training Test Screen
 
 ![WhatsApp Image 2022-05-23 at 02 22 00](https://user-images.githubusercontent.com/73111871/169720454-8476db62-9e6d-4a46-876f-91a9cfe21c38.jpeg)
 
-sigma values ​​selected screen
+Student Report Screen
+
+![WhatsApp Image 2022-05-23 at 02 27 06](https://user-images.githubusercontent.com/73111871/169720724-c13d8665-b02b-4bb5-9c8b-704eb337e314.jpeg)
+
+
+Sigma values ​​selected screen
 
 ![WhatsApp Image 2022-05-23 at 02 22 48](https://user-images.githubusercontent.com/73111871/169720466-b6fac62c-c19c-473d-915a-d73dc46c5a5c.jpeg)
 
-add question screen
+Add question screen
 
 ![WhatsApp Image 2022-05-23 at 02 23 34](https://user-images.githubusercontent.com/73111871/169720485-459251c2-d67a-4f9c-ab2f-ad6de232936b.jpeg)
 
